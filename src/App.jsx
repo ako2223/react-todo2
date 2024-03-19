@@ -3,8 +3,16 @@ import "./App.css";
 import TaskList from "./components/TaskList/TaskList";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import ReactGA from "react-ga";
+import { useLocation } from 'react-router-dom';
+
 
 function App() {
+  ReactGA.initialize("G-78XSWFYK07");
+  const location = useLocation();
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
   const [tasks, setTasks] = useState([]);
 
   const getTasks = async () => {
