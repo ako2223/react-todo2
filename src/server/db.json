@@ -1,18 +1,18 @@
-{"todos":{
-    "1" : {
+{"todos":[
+     {
       "id": 1,
       "name": "go to the store",
       "completed": false
     },
-    "2": {
+    {
       "id": 2,
       "name": "read a book",
       "completed": false
     },
-   "3": {
+    {
         "id": 3,
       "name": "cook food",
       "completed": true
     }
-}
+]
 }
