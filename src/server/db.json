@@ -24,6 +24,31 @@
       "name": "Finish the addition function for todos",
       "completed": false,
       "id": 5
+    },
+    {
+      "name": "Add delete button and make it work",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "name": "Test the refresh",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "name": "Make checkboxes save in json",
+      "completed": false,
+      "id": 8
+    },
+    {
+      "name": "read a book",
+      "completed": false,
+      "id": 9
+    },
+    {
+      "name": "test duplicate tasks",
+      "completed": false,
+      "id": 10
     }
   ]
 }
