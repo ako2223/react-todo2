@@ -7,6 +7,7 @@ import ReactGA from "react-ga";
 import { useLocation } from "react-router-dom";
 
 function App() {
+  const [value2, setValue] = useState("");
   ReactGA.initialize("G-MVMP9Q9NN2");
   const location = useLocation();
   useEffect(() => {
@@ -24,9 +25,34 @@ function App() {
     console.log(tasks);
   };
 
+  const handlerFuntion = () => {
+    console.log("enter press here! ");
+  };
+
   useEffect(() => {
     getTasks();
+    console.log("value");
+    console.log(value2);
   }, []);
+
+  useEffect(() => {
+    console.log("value");
+    console.log(value2);
+    if (value2 !== "") {
+      axios
+        .post("http://localhost:8000/todos", {
+          name: value2,
+          completed: false,
+        })
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+      window.location.reload(false);
+    }
+  }, [value2]);
 
   return (
     <div className="App">
@@ -36,7 +62,15 @@ function App() {
         alt="crayons"
       />
       <h1>toTooooDoooos</h1>
-      <input type="text" />
+      <input
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            setValue(e.target.value);
+          }
+        }}
+        type="text"
+        placeholder="What to do today?"
+      />
       <TaskList taskProps={tasks} />
     </div>
   );

@@ -1,5 +1,6 @@
-{"todos":[
-     {
+{
+  "todos": [
+    {
       "id": 1,
       "name": "go to the store",
       "completed": false
@@ -10,9 +11,19 @@
       "completed": false
     },
     {
-        "id": 3,
+      "id": 3,
       "name": "cook food",
       "completed": true
+    },
+    {
+      "name": "go hiking in the woodz",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "name": "Finish the addition function for todos",
+      "completed": false,
+      "id": 5
     }
-]
+  ]
 }
