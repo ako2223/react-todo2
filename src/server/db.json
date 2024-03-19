@@ -49,6 +49,21 @@
       "name": "test duplicate tasks",
       "completed": false,
       "id": 10
+    },
+    {
+      "name": "acqire knowledge",
+      "completed": false,
+      "id": 11
+    },
+    {
+      "name": "<h1>cross-origin</h1>",
+      "completed": false,
+      "id": 12
+    },
+    {
+      "name": "<script>handling.js</script>",
+      "completed": false,
+      "id": 13
     }
   ]
 }

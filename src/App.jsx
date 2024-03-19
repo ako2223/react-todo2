@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import ReactGA from "react-ga";
 import { useLocation } from "react-router-dom";
+ReactGA.initialize("G-9GRDLNBR2R");
 
 function App() {
   const [value2, setValue] = useState("");
-  ReactGA.initialize("G-MVMP9Q9NN2");
   const location = useLocation();
   useEffect(() => {
     ReactGA.pageview(location.pathname + location.search);
